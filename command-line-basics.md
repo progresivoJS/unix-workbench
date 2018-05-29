@@ -47,3 +47,33 @@
             - First you get the **power**, then you get the **money**.
     - Example
         - egrep "^[AEIOU]{1}.+[aeiou]{1}$" : all that both begin and end with a vowel.
+- find [start directory] -name "target.txt"
+    - Example
+        - find . -name "*.jpg"
+        - find ~ -name "*.jpg"
+- history
+    - ~/.zsh_history, ~/.bash_history
+
+- Customizing shell
+    - alias docs='cd ~/Documents'
+    - source ~/.zshrc
+- Differentiate
+    - diff "file1.txt" "file2.txt"
+    - sdiff "file1.txt" "file2.txt"
+    - md5 "file.txt" / shasum "file.txt" : createshashes or checksums that are unique to content of a file.
+- Pipes
+    - [program that produces output] | [program uses pipe output as input instead of file].
+    - grep "[aeiou]$" states.txt | wc -l : How many US states end in vowel?
+    - ls -al | grep "29" | less
+- Make
+    ```
+    [target]: [dependencies...]
+        [commands...]
+    ```
+    - target is a file which is created as the result of the commands.
+    - all: ~ : to execute all targets.
+    - clean
+
+
+# Bash Programming
+    
