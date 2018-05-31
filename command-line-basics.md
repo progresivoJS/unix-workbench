@@ -74,6 +74,4 @@
     - all: ~ : to execute all targets.
     - clean
 
-
 # Bash Programming
-    
